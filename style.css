@@ -6,7 +6,23 @@
     width: 60%;
     height: 100%; 
   }
-
+.subbutton{
+  font-size: 16px;
+    border-radius: 5px;
+    padding: 14px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #ffbc23;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-top: 25px;
+}
+.subbutton:hover {
+  transition: 0.5s;
+  background-color: #000000;
+    color:#ffbc23;
+    font-weight: 200;
+}
   .conditions{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
   }
@@ -24,7 +40,7 @@
     box-sizing: border-box;
   }
   body{
-    background-image: linear-gradient(to right, #BF36F4, #4F8DE7);
+    background-image: linear-gradient(to right, #ffbc23, #9e6f01);
   }
   
   .formbold-mb-3 {

@@ -2,433 +2,189 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Cascading IT Zone</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-  <style>
-    *{
-      margin: 0%;
-      padding: 0%;
-    }
-    .Loogo{
-      display:flex ;
-      justify-content: center;
-      align-items: center;
-    }
-  </style>
-
-  <!-- Favicons -->
-  <link href="assets/img/Sambal.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  
-  <link href="assets/css/style.css" rel="stylesheet">
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ID Card Info</title>
+  <link rel="icon" type="image/x-icon" href="./Sambal.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div class="loading-overlay" style="display: none;">
+    <!-- <img src="./1uoA-unscreen.gif" alt=""> -->
+    <img src="./Loading....gif" alt="">
+    <!-- <img src="./Loading .gif" alt=""> -->
+  </div>
+  <div class="formbold-main-wrapper">
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center justify-content-between">
+    <div class="formbold-form-wrapper">
+      <center>
+        <img src="./Master File copy.png" class="logo">
+      </center>
+      <!-- https://formspree.io/f/mayreblq -->
+ 
+      <form action="9" method="POST" name="formName">
+        <div class="formbold-form-title">
+          <h2 class="RE">Startup Pakistan</h2>
+          <p>Your ID card information is securely saved temporarily</p>
+        </div>
 
-      <div class="logo , Loogo">
-        <a href="index.html"><img src="Master File copy .png" alt="" class="img-fluid"></a>
-        <h1><a href="index.html">IT Zone</a></h1>
+        <div class="formbold-input-flex">
+          <div>
+            <label for="firstname" class="formbold-form-label">
+              First Name
+            </label>
+            <input type="text" name="firstname" id="firstname" class="formbold-form-input" required
+              placeholder="First Name" />
+          </div>
+          <div>
+            <label for="lastname" class="formbold-form-label"> Last Name </label>
+            <input type="text" name="lastname" id="lastname" class="formbold-form-input" required
+              placeholder="Last Name" />
+          </div>
+        </div>
 
-        <!-- Uncomment below if you prefer to use an image logo -->
-      </div>
+        <div class="formbold-input-flex">
+          <div>
+            <label for="email" class="formbold-form-label"> Email </label>
+            <input type="email" name="email" id="email" class="formbold-form-input" required
+              placeholder="Example@gmail.com" />
+          </div>
+          <div>
+            <label for="phone" class="formbold-form-label"> Phone Number </label>
+            <input type="text" name="phone" id="phone" class="formbold-form-input" required
+              placeholder="+92 300 0000000" />
+          </div>
+        </div>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#course">courses</a></li>
-          <!-- <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li> -->
-          <li><a class="nav-link scrollto" href="#team">Trainers</a></li>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="./index (2).html" target="_blank">Regesterd Your Self</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+        <div class="formbold-input-flex">
+          <div>
+            <label for="state" class="formbold-form-label">Linkedin</label>
+            <!-- <input class="input--style-4 js-datepicker" type="text" name="birthday"> -->
 
+            <input type="text" name="birthday" class="formbold-form-input" placeholder="Linkedin Url" required />
+          </div>
+          <div class="formbold-mb-3">
+            <br>
+            <label for="address2" class="formbold-form-label">
+              Gender
+              <select name="gender" class="formbold-form-input" required>
+                <option disabled selected>Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <!-- <div class="formbold-mb-3"> -->
+          <!-- <label for="address" class="formbold-form-label"> -->
+            <!-- Full Address -->
+          <!-- </label> -->
+          <!-- <input type="text" name="address" id="address" class="formbold-form-input" required
+            placeholder="Full Address" /> -->
+        <!-- </div> -->
+
+
+        <div class="formbold-mb-3">
+          <label for="address2" class="formbold-form-label">
+     
+            <!-- <select name="Subject" class="formbold-form-input" required>
+              <option disabled selected>Choose Your Course</option>
+              <option>HTML 05 CSS 03</option>
+              <option>JavaScript</option>
+              <option>PHP</option>
+              <option>MySQL</option>
+              <option>Ui/Ux</option>
+              <option>SEO</option>
+              <option>Ms Office</option>
+              <option>Adobe Photoshop</option>
+              <option>Adobe Illustrator</option>
+              <option>Adobe Indesign</option>
+            </select> -->
+          </label>
+          <!-- <input
+            class="formbold-form-input"
+          /> -->
+          <!--           
+          type="text"
+          name="address2"
+          id="address2" -->
+        </div>
+
+        <hr><br>
+        <p class="conditions"><b>Note:</b> Your ID card information is securely stored and will only be kept temporarily for the required duration.</p><br>
+        <div class="formbold-checkbox-wrapper">
+          <!-- <label for="supportCheckbox" class="formbold-checkbox-label">
+            <div class="formbold-relative">
+              <input type="checkbox" id="supportCheckbox" class="formbold-input-checkbox" required />
+              <div class="formbold-checkbox-inner">
+                <span class="formbold-opacity-0">
+                  <svg width="11" height="8" viewBox="0 0 11 8" fill="none" class="formbold-stroke-current">
+                    <path
+                      d="M10.0915 0.951972L10.0867 0.946075L10.0813 0.940568C9.90076 0.753564 9.61034 0.753146 9.42927 0.939309L4.16201 6.22962L1.58507 3.63469C1.40401 3.44841 1.11351 3.44879 0.932892 3.63584C0.755703 3.81933 0.755703 4.10875 0.932892 4.29224L0.932878 4.29225L0.934851 4.29424L3.58046 6.95832C3.73676 7.11955 3.94983 7.2 4.1473 7.2C4.36196 7.2 4.55963 7.11773 4.71406 6.9584L10.0468 1.60234C10.2436 1.4199 10.2421 1.1339 10.0915 0.951972ZM4.2327 6.30081L4.2317 6.2998C4.23206 6.30015 4.23237 6.30049 4.23269 6.30082L4.2327 6.30081Z"
+                      stroke-width="0.4"></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <!-- I agree to the defined
+            <a href="#"> terms, conditions, and policies</a> -->
+          </label> 
+        </div>
+        <!-- <input type="submit" name="submit" id="But" class="formbold-btn" onclick="fun()" required> -->
+        <button class="subbutton" type="submit" id="But" onclick="validateForm(event)">Submit</button>
+        <button class="formbold-btn , reset" type="button" id="resetButton">Reset</button>
+      </form>
     </div>
-  </header><!-- End Header -->
+  </div>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxF6TEBW_AFwx_SA0_8i8jvY8JcsaeaO2Xd0rn-1EQKeDYgosbVHqktqNW1wG0ENHHI/exec';
+    const form = document.forms['formName'];
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <img src="./Master File copy .png" alt="" width="70%">
-          <h1 data-aos="fade-up">Welcome to the Cascading
-            IT Zone</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">Grow your Skill's with us. Free Joining</h2>
-          <div data-aos="fade-up" data-aos-delay="800">
-            <a href="./index (2).html" class="btn-get-started scrollto" target="_blank">Register Now</a>
-          </div>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
-          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
-        </div>
-      </div>
-    </div>
+    form.addEventListener('submit', e => {
+      e.preventDefault();
 
-  </section><!-- End Hero -->
+      // Display loading animation
+      const loadingOverlay = document.querySelector('.loading-overlay');
+      loadingOverlay.style.display = 'flex';
 
-  
+      // Submit the form
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          // Hide loading animation
 
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>About Us</h2>
-        </div>
-
-        <div class="row content">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
-            <p>
-              I have got you covered. Browse courses and find out the best course for you. Its free! <b>Cascading IT Zone</b> is my attempt to teach basics and those coding techniques to people in short time which took me ages to learn.
-            </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i>Empowering learners with free, high-quality education.</li>
-              <li><i class="ri-check-double-line"></i>Your one-stop shop for exploring new skills, all at zero cost</li>
-              <li><i class="ri-check-double-line"></i>We believe knowledge should be accessible. Learn anything, free.</li>
-            </ul>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <p>
-              Free courses allow you to learn new skills or gain knowledge without any cost. They cover a wide range of topics and can be a great way to explore your interests or boost your career prospects. <br>
-              <img src="./Master File copy .png" alt="" width="20%">
-            </p>
-            <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
-          </div>
-        </div>
-      </div>
-    </section><!-- End About Us Section -->
-<hr>
-    <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
-      <div class="container">
-
-        <div class="row">
-          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
-          <center>
-                <!-- <img src="assets/img/counts-img.svg" alt="" class="img-fluid"> -->
-          </center>          
-</div>
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2 id="course">courses</h2>
-          <p>Confused on which course to take?</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="300">
-          <a href="./Info/index.html"> <div class="col-lg-3 col-md-4">
-            <div class="icon-box">
-              <!-- <i class="ri-store-line" style="color: #ffbb2c;"></i> -->
-              <h3>HTML5 CSS3</h3>
-            </div></a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <a href="./Info/index.html">  <div class="icon-box">
-              <!-- <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i> -->
-              <h3>JavaScript</h3>
-            </div></a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <a href="./Info/index.html">   <div class="icon-box">
-              <!-- <i class="ri-calendar-todo-line" style="color: #e80368;"></i> -->
-              <h3>Advanced JS</h3>
-            </div></a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-         <a href="./Info/index.html">   <div class="icon-box">
-               <!-- <i class="ri-paint-brush-line" style="color: #e361ff;"></i> -->
-              <h3>PHP </h3>
-            </div></a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-         <a href="./Info/index.html">   <div class="icon-box">
-               <!-- <i class="ri-database-2-line" style="color: #47aeff;"></i> -->
-              <h3>MySQL </h3>
-            </div></a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-         <a href="./Info/index.html">   <div class="icon-box">
-               <!-- <i class="ri-gradienter-line" style="color: #ffa76e;"></i> -->
-              <h3>Mongodb </h3>
-            </div></a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-         <a href="./Info/index.html">   <div class="icon-box">
-               <!-- <i class="ri-gradienter-line" style="color: #ffa76e;"></i> -->
-              <h3>Ui/Ux </h3>
-            </div></a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-         <a href="./Info/index.html">   <div class="icon-box">
-               <!-- <i class="ri-file-list-3-line" style="color: #11dbcf;"></i> -->
-              <h3>SEO </h3>
-            </div></a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-         <a href="./Info/index.html">   <div class="icon-box">
-               <!-- <i class="ri-price-tag-2-line" style="color: #4233ff;"></i> -->
-              <h3>Adobe PhotoShop</h3>
-            </div></a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-         <a href="./Info/index.html">   <div class="icon-box">
-               <!-- <i class="ri-anchor-line" style="color: #b2904f;"></i> -->
-              <h3>Adobe Illustrator</h3>
-            </div></a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-         <a href="./Info/index.html">   <div class="icon-box">
-               <!-- <i class="ri-disc-line" style="color: #b20969;"></i> -->
-              <h3>Adobe Indesign</h3>
-            </div></a>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-         <a href="./Info/index.html">   <div class="icon-box">
-               <!-- <i class="ri-base-station-line" style="color: #ff5828;"></i> -->
-              <h3>MS Office</h3>
-            </div></a>
-          </div>
-          <!-- <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">
-              <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-              <h3><a href="">Flavor Nivelanda</a></h3>
-            </div>
-          </div> -->
-        </div>
-
-      </div>
-    </section><!-- End Features Section -->
+          loadingOverlay.style.display = 'none';
+          // Display success message
+          // alert("Thank you! Your form is submitted successfully.");
 
 
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
-      <div class="container">
+          // Reload the page
+          window.location.reload();
+          // swal("Good job!", "You clicked the button!", "success");
+          // alert("Thank you! Your form is submitted successfully.");
 
-        <div class="section-title" data-aos="fade-up">
-          <h2>Trainers</h2>
-          <p>IT Teachers Translate Tech Lingo Into Actionable Skills.</p>
-          <p>A Project of Miss Maria Khan. </p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <!-- <a href="" target="_blank"><i class="bi bi-twitter"></i></a> -->
-                  <!-- <a href="" target="_blank"><i class="bi bi-facebook"></i></a> -->
-                  <a href="" target="_blank"><i class="bi bi-instagram"></i></a>
-                  <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Ahmed Alham</h4>
-                <span>Ui/Ux Designer</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <!-- <a href="" target="_blank"><i class="bi bi-twitter"></i></a> -->
-                  <!-- <a href="https://www.facebook.com/profile.php?id=61555179387978" target="_blank"><i class="bi bi-facebook"></i></a> -->
-                  <a href="https://www.instagram.com/mohammadarmash135/" target="_blank"><i class="bi bi-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/mohammad-armash-78b422266/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>M.Armash</h4>
-                <span>Developer & G_Designer</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="200">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <!-- <a href="" target="_blank"><i class="bi bi-facebook"></i></a> -->
-                  <!-- <a href="" target="_blank"><i class="bi bi-twitter"></i></a> -->
-                  <a href="" target="_blank"><i class="bi bi-instagram"></i></a>
-                  <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Sojood Ali</h4>
-                <span>Developer</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="400">
-              <div class="member-img">
-                <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href="" target="_blank"><i class="bi bi-twitter"></i></a>
-                  <a href="" target="_blank"><i class="bi bi-facebook"></i></a>
-                  <a href="" target="_blank"><i class="bi bi-instagram"></i></a>
-                  <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Muzammil Ali</h4>
-                <span>Developer</span>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- AMAZ  -->
-          <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="200">
-              <div class="member-img">
-                <img src="assets/img/team/team-5.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href="" target="_blank"><i class="bi bi-facebook"></i></a> -->
-                  <!-- <a href="" target="_blank"><i class="bi bi-twitter"></i></a> 
-                  <a href="" target="_blank"><i class="bi bi-instagram"></i></a>
-                  <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Amaz Ali</h4>
-                <span>SEO Consultant</span>
-              </div>
-            </div>
-          </div> -->
-
-        </div>
-
-      </div>
-    </section><!-- End Team Section -->
+          window.location.href = 'popup.html';
 
 
+        })
+        .catch(error => {
+          // Hide loading animation
+          loadingOverlay.style.display = 'none';
+          // Display error message
+          console.error('Error!', error.message);
+        });
+    });
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
+    resetButton.addEventListener('click', () => {
+      form.reset(); // Reset form fields
+    });
 
-        <div class="section-title" data-aos="fade-up">
-          <h2>Contact Us</h2>
-        </div>
 
-        <div class="row">
+  </script>
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="contact-about">
-              <h3>Cascading IT Zone</h3>
-              <!-- <p>Cras fermentum odio eu feugiat. Justo eget magna fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>  -->
-              <div class="social-links">
-                <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
-                <a href="https://www.facebook.com/profile.php?id=61557566620040" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
-                <a href="https://www.instagram.com/mohammadarmash135/" class="instagram" target="_blank"><i class="bi bi-instagram" ></i></a>
-                <a href="https://www.linkedin.com/in/mohammad-armash-78b422266/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
-              </div>
-            </div>
-          </div> 
-
-          <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
-            <div class="info">
-              <div>
-                <i class="ri-map-pin-line"></i>
-                <p>Karachi, Pakistan</p>
-              </div>
-
-              <div>
-                <i class="ri-mail-send-line"></i>
-                <p>cascadingitzone@gmail.com</p>
-              </div>
-
-              <div>
-                <i class="ri-phone-line"></i>
-                <p>+92 332 1124051</p>
-              </div>
-
-            </div>
-          </div>
-
-          <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-group">
-                <!-- <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div> -->
-
-              <div class="text-center"><button type="submit"><a href="https://wa.me/+923321124051?text=I'm%20interested%20for%20your%20IT courses:" target="_blank" style="color: aliceblue;">Send Message</a>
-              </button></div>
-            </form>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-
-  <p class="text-center">Copyright © 2024 all rights reserved</p>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
 
 </body>
 
